@@ -1,0 +1,5 @@
+.content-container {
+  margin: 0 auto; // makes sure evenly distributed space on left and right
+  padding: 0 $m-size; // padding on the left and right
+  max-width: 80rem;
+}

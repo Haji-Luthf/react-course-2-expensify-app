@@ -1,0 +1,16 @@
+.input-group {
+  display: flex; // to have things going left to right
+  flex-direction: column; // for mobile/smaller screens
+  margin-bottom: $m-size; // for mobile/smaller screens
+  @media (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+    margin-bottom: $l-size;
+  }
+}
+
+.input-group__item {
+  margin-bottom: $s-size; // for mobile/smaller screens
+  @media (min-width: $desktop-breakpoint) {
+    margin: 0 $s-size 0 0; // removing the margin-bottom set above for mobile
+  }
+}

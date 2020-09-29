@@ -1,0 +1,12 @@
+.form {
+  display: flex;
+  flex-direction: column; // stack top to bottom
+  >* { //direct descendents - all direct children of form, not children of children
+    margin-bottom: $m-size;
+  }
+}
+
+.form__error {
+  margin: 0 0 $m-size 0; //right
+  font-style: italic;
+}

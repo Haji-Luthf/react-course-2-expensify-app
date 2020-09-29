@@ -1,0 +1,22 @@
+.box-layout { // class selector
+  align-items: center;
+  background: url('/images/bg.jpg');
+  background-size: cover; // makes sure it covers the container
+  display: flex;
+  height: 100vh; // 100% of viewport height 
+  justify-content: center;
+  width: 100vw; // 100% of viewport height 
+}
+
+.box-layout__box { // BEM
+  background: fade-out(white, .15); //15% fading out to see background image through
+  border-radius: 3px; // softness to the corners
+  padding: $l-size $m-size; // space between edge of the box and content
+  text-align: center;
+  width: 25rem; //fixed width
+}
+
+.box-layout__title {
+  margin: 0 0 $m-size 0; // only margin for the bottom
+  line-height: 1; // space around the line of the title
+}
